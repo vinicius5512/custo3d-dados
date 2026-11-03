@@ -1,0 +1,20 @@
+name: Atualizar tarifas da ANEEL
+on:
+  schedule:
+    - cron: '17 9 * * 1'   # toda segunda, 06:17 (Brasília)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Baixar tarifas
+        run: python3 scripts/atualizar_tarifas.py
+      - name: Salvar no repositório
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add dados/tarifas.json
+          git diff --cached --quiet && echo "sem mudanças" || (git commit -m "Tarifas ANEEL atualizadas" && git push)

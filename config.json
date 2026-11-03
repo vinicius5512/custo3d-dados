@@ -1,0 +1,12 @@
+{
+  "filamento": {
+    "botao": "🛒 Comprar filamento",
+    "titulo": "Onde comprar filamento",
+    "descricao": "Lojas que eu recomendo para PLA, PETG e ABS.",
+    "lojas": [
+      { "nome": "Shopee", "detalhe": "PLA a partir de R$ 70", "link": "" },
+      { "nome": "Mercado Livre", "detalhe": "entrega rápida", "link": "" },
+      { "nome": "Amazon", "detalhe": "", "link": "" }
+    ]
+  }
+}
