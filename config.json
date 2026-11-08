@@ -26,10 +26,11 @@
     "ate": "2027-03-31",
     "obs": "Código para revisão do Google Play. Para desligar, apague este bloco ou mude o hash."
   },
-  "acessos": [
+  "acessos": [],
+  "acessosUnicos": [
     {
       "hash": "6b3e98b7089e0efa3e30c874de8f17cec4a5334d3ed0c339da1e550ddeaedb57",
-      "obs": "Vinicius (dono)"
+      "obs": "Vinicius"
     },
     {
       "hash": "a9fcf3b57917de0dea943d594fde37411c7cba33bf34672e9c4cd28170c93508",
@@ -285,5 +286,6 @@
       "ate": "2027-11-30",
       "obs": "Testador 50"
     }
-  ]
+  ],
+  "ativacao": "https://custo3d-ativacao.vinicius5512.workers.dev"
 }
